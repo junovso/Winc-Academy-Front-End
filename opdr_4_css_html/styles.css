@@ -1,0 +1,18 @@
+body {
+  background-color: #292b2c;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.index-img {
+  border: 5px solid black;
+}
+
+.big-colored-text {
+  font-size: 30px;
+  color: yellowgreen;
+}
+
+#about-link {
+  background-color: gray;
+}
