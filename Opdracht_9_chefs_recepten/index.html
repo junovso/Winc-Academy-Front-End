@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- hier zet je de code in de head tags -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Recepten Pagina</title>
+  </head>
+  <body>
+    <header>
+      <h1>Post Jou Recept</h1>
+    </header>
+    <main>
+      <form name="recept" method="POST" data-netlify="true">
+        <p>
+          <label>Maam: <input type="text" name="naam" /></label>
+        </p>
+        <p>
+          <label>Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label
+            >Telefoonnummer: <input type="tel" name="telefoonnummer"
+          /></label>
+        </p>
+        <p>
+          <label
+            >Geboortedatum: <input type="date" name="geboortedatum"
+          /></label>
+        </p>
+        <p>
+          <h6> Geslacht: </h6>
+          <label>Man: <input type="radio" name="man" /></label>
+          <label>Vrouw: <input type="radio" name="vrouw" /></label>
+        </p>
+        <p>
+            <h6> Favoriete keuken: </h6>
+            <label>Frans: <input type="checkbox" name="frans" /></label>
+            <label>Italiaans: <input type="checkbox" name="italiaans" /></label>
+            <label>Spaans: <input type="checkbox" name="spaans" /></label>
+            <label>Arabisch: <input type="checkbox" name="arabisch" /></label>
+
+          </p>
+          <p>
+            <h6> Favoriete kleur schort : </h6>
+            <label><input type="color" name="favschortkleur" /></label>
+          </p>
+        <p>
+          <label>Biografie: <textarea name="biografie"></textarea></label>
+        </p>
+        <p>
+            <h6> Upload je laatste recept : </h6>
+            <label><input type="file" name="uploadrecept" /></label>
+          </p>
+          <p>
+            <h6>De link naar jou receptenpagina : </h6>
+            <label><input type="url" name="receptenweblink" /></label>
+          </p>
+        <p>
+            <label><input type="reset" name="reset" /></label>
+          <button type="submit">Verstuur</button>
+        </p>
+      </form>
+    </main>
+    <footer>Copyright 2021</footer>
+  </body>
+</html>
