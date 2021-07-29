@@ -1,0 +1,6 @@
+CSS Grid is perfect om te gebruiken voor het maken van een pagina layout.
+Door CSS Grid te gebruiken kan je elementen een preciese positie op de pagina geven
+en heb je dus geen framework zoals bootstrap nodig.
+Dit zorgt weer voor een overzichtelijkere HTMl code omdat alle positionering
+in de CSS file gebeurt.
+
