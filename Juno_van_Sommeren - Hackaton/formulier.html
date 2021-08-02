@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Index</title>
+  </head>
+  <body>
+    <div class="index-container">
+      <header>
+        <h3>Amazing Chocolates</h3>
+      </header>
+      <aside>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="belgie.html">Belgische Chocolade</a></li>
+          <li class="active"><a href="formulier.html">Inzenden</a></li>
+        </ul>
+      </aside>
+      <main>
+        <div class="inzendingen-main-container">
+          <div class="blok" id="blok-formulier">
+            <form>
+              <label for="naam">Naam:</label>
+              <input type="text" id="naam" name="naam" />
+              <label for="achternaam">Achternaam:</label>
+              <input type="text" id="achternaam" name="achternaam" />
+              <label for="recept">Recept:</label>
+              <textarea id="recept" name="recept"></textarea>
+              <label for="foto">Foto van het eindresultaat:</label>
+              <input type="file" />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+          <div class="blok" id="laatste-inzendingen">
+            <div><img src="img/choco1.jpg" width="100px" height="100px" /></div>
+            <div><img src="img/choco1.jpg" width="100px" height="100px" /></div>
+            <div><img src="img/choco1.jpg" width="100px" height="100px" /></div>
+            <div><img src="img/choco1.jpg" width="100px" height="100px" /></div>
+            <div><img src="img/choco1.jpg" width="100px" height="100px" /></div>
+          </div>
+        </div>
+      </main>
+      <footer>Copyright 2021</footer>
+    </div>
+  </body>
+</html>
