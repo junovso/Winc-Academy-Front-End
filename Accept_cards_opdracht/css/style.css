@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.blok {
+  padding: 10px;
+  background-color: white;
+  margin: 0 auto;
+  width: 400px;
+  border: 2px solid grey;
+  border-radius: 4px;
+  display: grid;
+  grid-template: auto 50px 50px / repeat(10, auto);
+  grid-template-areas:
+    "a a a a a a a a a b"
+    "t t t t t t t t t t"
+    "c c c c c c c c c c";
+}
+
+.naam-status {
+  grid-area: a;
+}
+
+.icoon {
+  grid-area: b;
+}
+
+.bericht {
+  margin-top: 10px;
+  grid-area: t;
+}
+.button-group {
+  border-top: 2px solid grey;
+  grid-area: c;
+}
+
+[type="button"] {
+  padding: 5px 10px 5px 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  width: 100px;
+}
+
+#approve {
+  background-color: white;
+  border: 2px solid green;
+  border-radius: 4px;
+  width: 48%;
+  color: green;
+  font-weight: bold;
+}
+
+#decline {
+  background-color: white;
+  margin-left: 0;
+  border: 2px solid red;
+  border-radius: 4px;
+  width: 48%;
+  color: red;
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.naam {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.titel {
+  font-weight: 600;
+  font-size: 12px;
+  color: darkslategrey;
+}
