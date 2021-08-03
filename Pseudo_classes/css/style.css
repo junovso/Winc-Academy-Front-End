@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkblue;
+}
+
+li {
+  float: left;
+  margin-left: 20px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: lightblue;
+}
+
+.dik-blauw:hover {
+  color: lightblue;
+  font-weight: bold;
+}
+
+.active-status:active {
+  color: red;
+  font-style: italic;
+}
+
+/* Alle links naar google gelinkt, met de code hier beneden geef ik aan dat ik alle links die "goo bevatten" 
+een fontsize van 25 px wil geven */
+a[href*="goo"] {
+  font-size: 25px;
+  display: block;
+}
+
+/* Deze pseudo class werkt niet op mijn browser.
+
+.kleurtje:visited {
+  background-color: yellow;
+}
+
+*/
+
+#input-veld-een:focus {
+  font-size: 20px;
+  color: green;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+.nav-input {
+  margin-top: 10px;
+}
+
+.nav-input:focus {
+  border: 10px solid aqua;
+}
+
+.currentPage {
+  background-color: rgb(99, 98, 155);
+}
