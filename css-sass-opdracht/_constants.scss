@@ -1,0 +1,15 @@
+$padding: 20px;
+$lightGreen: #c0eea9;
+$blackish: #090b08;
+$black: #000;
+$white: #fff;
+$fluorGreen: hsl(100, 50%, 65%);
+
+@mixin mixinVoorbeeld {
+  text-align: center;
+  padding: $padding;
+  .p {
+    text-align: justify;
+    line-height: 1.4em;
+  }
+}
