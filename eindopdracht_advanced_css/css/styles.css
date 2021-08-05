@@ -81,6 +81,20 @@ p {
   transition: 0.5s ease;
   background-color: #393839;
 }
+.img-container .overlay-text {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 30%;
+  width: 40%;
+  height: 10%;
+}
+.img-container .card-button {
+  height: 40px;
+  width: 100px;
+  background-color: white;
+  border: 1px solid green;
+}
 .img-container:hover .card-overlay {
   opacity: 1;
 }
@@ -101,96 +115,118 @@ p {
     margin-top: 50px;
   }
 }
-.social-wrapper {
-  font-size: 5rem;
-  text-align: center;
-}
-
-.social-media-blog {
-  background-color: #e17b77;
-  height: 100px;
-  width: 100px;
-}
-
 /*Ik gebruik FAS 6, maar om een of andere reden kan ik de icons niet weergeven zonder de font-family op deze manier neer te zetten. ( dit is een
 bekend probleem ) */
-.opdracht-3 {
+.social-wrapper {
   position: fixed;
   right: 0;
   top: 20%;
-}
-.opdracht-3 .social-wrapper {
   font-size: 5rem;
   text-align: center;
   color: white;
 }
-.opdracht-3 .social-media-blog {
-  background-color: #e17b77;
+
+.social-media-blog {
+  position: fixed;
+  right: 0;
   height: 100px;
   width: 100px;
+  top: 50px;
+  background-color: #e17b77;
 }
-.opdracht-3 .social-media-blog:hover {
+.social-media-blog:hover {
   width: 300px;
   transition: width 2s;
 }
-.opdracht-3 .social-media-blog:before {
+.social-media-blog:before {
+  position: absolute;
+  left: 0;
   content: "";
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
 }
-.opdracht-3 .social-media-facebook {
-  background-color: #3b5998;
+
+.social-media-facebook {
+  position: fixed;
+  right: 0;
   height: 100px;
   width: 100px;
+  top: 150px;
+  background-color: #3b5998;
 }
-.opdracht-3 .social-media-facebook:hover {
+.social-media-facebook:hover {
   width: 300px;
   transition: width 2s;
 }
-.opdracht-3 .social-media-facebook:before {
+.social-media-facebook:before {
+  position: absolute;
+  left: 0;
   content: "";
   font-family: "Font Awesome 5 Brands";
   font-weight: 600;
 }
-.opdracht-3 .social-media-twitter {
-  background-color: #00aced;
+
+.social-media-twitter {
+  position: fixed;
+  right: 0;
   height: 100px;
   width: 100px;
+  top: 250px;
+  background-color: #00aced;
 }
-.opdracht-3 .social-media-twitter:hover {
+.social-media-twitter:hover {
   width: 300px;
   transition: width 2s;
 }
-.opdracht-3 .social-media-twitter:before {
+.social-media-twitter:before {
+  position: absolute;
+  left: 0;
   content: "";
   font-family: "Font Awesome 5 Brands";
   font-weight: 600;
 }
-.opdracht-3 .social-media-github {
-  background-color: #333;
+
+.social-media-github {
+  position: fixed;
+  right: 0;
   height: 100px;
   width: 100px;
+  top: 350px;
+  background-color: #333;
 }
-.opdracht-3 .social-media-github:hover {
+.social-media-github:hover {
   width: 300px;
   transition: width 2s;
 }
-.opdracht-3 .social-media-github:before {
+.social-media-github:before {
+  position: absolute;
+  left: 0;
   content: "";
   font-family: "Font Awesome 5 Brands";
   font-weight: 600;
 }
-.opdracht-3 .social-media-linkedin {
-  background-color: #007bb6;
+
+.social-media-linkedin {
+  position: fixed;
+  right: 0;
   height: 100px;
   width: 100px;
+  right: 0;
+  top: 450px;
+  background-color: #007bb6;
 }
-.opdracht-3 .social-media-linkedin:hover {
+.social-media-linkedin:hover {
   width: 300px;
   transition: width 2s;
 }
-.opdracht-3 .social-media-linkedin:before {
+.social-media-linkedin:before {
+  position: absolute;
+  left: 0;
   content: "";
   font-family: "Font Awesome 5 Brands";
   font-weight: 600;
+}
+
+a {
+  font-size: 20px;
 }/*# sourceMappingURL=styles.css.map */
