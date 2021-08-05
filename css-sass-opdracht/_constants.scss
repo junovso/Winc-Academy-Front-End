@@ -6,10 +6,7 @@ $white: #fff;
 $fluorGreen: hsl(100, 50%, 65%);
 
 @mixin mixinVoorbeeld {
+  max-width: 700px;
   text-align: center;
-  padding: $padding;
-  .p {
-    text-align: justify;
-    line-height: 1.4em;
-  }
+  padding-top: 1.4em;
 }

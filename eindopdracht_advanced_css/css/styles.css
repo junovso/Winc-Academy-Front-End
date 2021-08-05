@@ -1,0 +1,196 @@
+@charset "UTF-8";
+body {
+  background: #c3cfe2;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.text-muted {
+  color: #afafaf;
+}
+
+.naam {
+  color: #fff;
+}
+
+.card {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #8d8b8b;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card .card-body {
+  padding: 10px;
+  padding-bottom: 100px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px 10px 0px 0px;
+}
+.card .card-footer {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  background-color: #686de0;
+  border-radius: 0px 0px 10px 10px;
+  padding-bottom: 10px;
+}
+.card .card-footer-text {
+  margin-top: 60px;
+  text-align: center;
+}
+.card .card-image {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #fff;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: -60px;
+}
+
+.img-container {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  transition: all 0.5s ease-in;
+}
+.img-container .opdracht-2-image {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+.img-container .card-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: none;
+  transition: 0.5s ease;
+  background-color: #393839;
+}
+.img-container:hover .card-overlay {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 481px) {
+  .opdracht-2 {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template: auto auto auto/repeat(2, 1fr);
+    margin-top: 50px;
+  }
+}
+@media only screen and (min-width: 998px) {
+  .opdracht-2 {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template: auto auto auto/repeat(3, 1fr);
+    margin-top: 50px;
+  }
+}
+.social-wrapper {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.social-media-blog {
+  background-color: #e17b77;
+  height: 100px;
+  width: 100px;
+}
+
+/*Ik gebruik FAS 6, maar om een of andere reden kan ik de icons niet weergeven zonder de font-family op deze manier neer te zetten. ( dit is een
+bekend probleem ) */
+.opdracht-3 {
+  position: fixed;
+  right: 0;
+  top: 20%;
+}
+.opdracht-3 .social-wrapper {
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+}
+.opdracht-3 .social-media-blog {
+  background-color: #e17b77;
+  height: 100px;
+  width: 100px;
+}
+.opdracht-3 .social-media-blog:hover {
+  width: 300px;
+  transition: width 2s;
+}
+.opdracht-3 .social-media-blog:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+}
+.opdracht-3 .social-media-facebook {
+  background-color: #3b5998;
+  height: 100px;
+  width: 100px;
+}
+.opdracht-3 .social-media-facebook:hover {
+  width: 300px;
+  transition: width 2s;
+}
+.opdracht-3 .social-media-facebook:before {
+  content: "";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 600;
+}
+.opdracht-3 .social-media-twitter {
+  background-color: #00aced;
+  height: 100px;
+  width: 100px;
+}
+.opdracht-3 .social-media-twitter:hover {
+  width: 300px;
+  transition: width 2s;
+}
+.opdracht-3 .social-media-twitter:before {
+  content: "";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 600;
+}
+.opdracht-3 .social-media-github {
+  background-color: #333;
+  height: 100px;
+  width: 100px;
+}
+.opdracht-3 .social-media-github:hover {
+  width: 300px;
+  transition: width 2s;
+}
+.opdracht-3 .social-media-github:before {
+  content: "";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 600;
+}
+.opdracht-3 .social-media-linkedin {
+  background-color: #007bb6;
+  height: 100px;
+  width: 100px;
+}
+.opdracht-3 .social-media-linkedin:hover {
+  width: 300px;
+  transition: width 2s;
+}
+.opdracht-3 .social-media-linkedin:before {
+  content: "";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 600;
+}/*# sourceMappingURL=styles.css.map */

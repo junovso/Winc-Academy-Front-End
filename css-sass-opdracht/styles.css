@@ -134,17 +134,14 @@ header .brand-logo img {
 
 /* Hero Section */
 .hero {
+  max-width: 700px;
   text-align: center;
-  padding: 20px;
+  padding-top: 1.4em;
   padding: 20px;
   display: flex;
   height: 100vh;
   align-items: center;
   background: #97d279;
-}
-.hero .p {
-  text-align: justify;
-  line-height: 1.4em;
 }
 .hero .hero-img img {
   display: block;
@@ -154,13 +151,10 @@ header .brand-logo img {
 
 /* Featured Section */
 .featured {
+  max-width: 700px;
   text-align: center;
+  padding-top: 1.4em;
   padding: 20px;
-  padding: 20px;
-}
-.featured .p {
-  text-align: justify;
-  line-height: 1.4em;
 }
 .featured .wrapper {
   display: flex;
@@ -175,14 +169,11 @@ header .brand-logo img {
 
 /* About Section */
 .about {
+  max-width: 700px;
   text-align: center;
-  padding: 20px;
+  padding-top: 1.4em;
   background-color: #97d279;
   padding: 20px;
-}
-.about .p {
-  text-align: justify;
-  line-height: 1.4em;
 }
 .about .wrapper {
   display: flex;
