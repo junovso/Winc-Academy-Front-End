@@ -14,10 +14,20 @@ $boxshadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
   right: 0;
   height: 100px;
   width: 100px;
+  overflow: hidden;
 }
 body {
   background: $background;
 }
+
+a {
+  color: $white;
+  text-decoration: none;
+  font-size: 24px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -32,7 +42,7 @@ p {
 }
 
 .card {
-  width: 300px;
+  width: 350px;
   margin: 0 auto;
   margin-top: 20px;
   text-align: center;
@@ -72,7 +82,7 @@ p {
 }
 
 .img-container {
-  width: 300px;
+  width: 350px;
   margin: 0 auto;
   margin-top: 20px;
   text-align: center;
@@ -80,8 +90,8 @@ p {
   transition: all 0.5s ease-in;
   .opdracht-2-image {
     display: block;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
   }
   .card-overlay {
     position: absolute;
@@ -150,12 +160,12 @@ bekend probleem ) */
   top: 50px;
   background-color: #e17b77;
   &:hover {
-    width: 300px;
+    width: 350px;
     transition: width 2s;
   }
   &:before {
-    position: absolute;
-    left: 0;
+    float: left;
+
     content: "\f781";
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
@@ -166,12 +176,12 @@ bekend probleem ) */
   top: 150px;
   background-color: #3b5998;
   &:hover {
-    width: 300px;
+    width: 350px;
     transition: width 2s;
   }
   &:before {
-    position: absolute;
-    left: 0;
+    float: left;
+
     content: "\f39e";
     font-family: "Font Awesome 5 Brands";
     font-weight: 600;
@@ -182,12 +192,12 @@ bekend probleem ) */
   top: 250px;
   background-color: #00aced;
   &:hover {
-    width: 300px;
+    width: 350px;
     transition: width 2s;
   }
   &:before {
-    position: absolute;
-    left: 0;
+    float: left;
+
     content: "\f099";
     font-family: "Font Awesome 5 Brands";
     font-weight: 600;
@@ -198,29 +208,30 @@ bekend probleem ) */
   top: 350px;
   background-color: #333;
   &:hover {
-    width: 300px;
+    width: 350px;
     transition: width 2s;
   }
   &:before {
-    position: absolute;
-    left: 0;
+    float: left;
+
     content: "\f09b";
     font-family: "Font Awesome 5 Brands";
     font-weight: 600;
   }
 }
 .social-media-linkedin {
+  position: absolute;
   @include sidebar-blokjes();
-  right: 0;
   top: 450px;
   background-color: #007bb6;
   &:hover {
-    width: 300px;
+    float: left;
+
+    width: 350px;
     transition: width 2s;
   }
   &:before {
-    position: absolute;
-    left: 0;
+    float: left;
     content: "\f0e1";
     font-family: "Font Awesome 5 Brands";
     font-weight: 600;
