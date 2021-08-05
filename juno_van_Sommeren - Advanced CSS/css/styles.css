@@ -1,0 +1,237 @@
+@charset "UTF-8";
+body {
+  background: #c3cfe2;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.text-muted {
+  color: #afafaf;
+}
+
+.naam {
+  color: #fff;
+}
+
+.card {
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #8d8b8b;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card .card-body {
+  padding: 10px;
+  padding-bottom: 100px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px 10px 0px 0px;
+}
+.card .card-footer {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  background-color: #686de0;
+  border-radius: 0px 0px 10px 10px;
+  padding-bottom: 10px;
+}
+.card .card-footer-text {
+  margin-top: 60px;
+  text-align: center;
+}
+.card .card-image {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #fff;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: -60px;
+}
+
+.img-container {
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  transition: all 0.5s ease-in;
+}
+.img-container .opdracht-2-image {
+  display: block;
+  width: 350px;
+  height: 350px;
+}
+.img-container .card-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: none;
+  transition: 0.5s ease;
+  background-color: #393839;
+}
+.img-container .overlay-text {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 30%;
+  width: 40%;
+  height: 10%;
+}
+.img-container .card-button {
+  height: 40px;
+  width: 100px;
+  background-color: white;
+  border: 1px solid green;
+}
+.img-container:hover .card-overlay {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 481px) {
+  .opdracht-2 {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template: auto auto auto/repeat(2, 1fr);
+    margin-top: 50px;
+  }
+}
+@media only screen and (min-width: 998px) {
+  .opdracht-2 {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template: auto auto auto/repeat(3, 1fr);
+    margin-top: 50px;
+  }
+}
+/*Ik gebruik FAS 6, maar om een of andere reden kan ik de icons niet weergeven zonder de font-family op deze manier neer te zetten. ( dit is een
+bekend probleem ) */
+.social-wrapper {
+  position: fixed;
+  right: 0;
+  top: 20%;
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+}
+
+.social-media-blog {
+  position: fixed;
+  right: 0;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  top: 50px;
+  background-color: #e17b77;
+}
+.social-media-blog:hover {
+  width: 350px;
+  transition: width 2s;
+}
+.social-media-blog:before {
+  float: left;
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+}
+
+.social-media-facebook {
+  position: fixed;
+  right: 0;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  top: 150px;
+  background-color: #3b5998;
+}
+.social-media-facebook:hover {
+  width: 350px;
+  transition: width 2s;
+}
+.social-media-facebook:before {
+  float: left;
+  content: "";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 600;
+}
+
+.social-media-twitter {
+  position: fixed;
+  right: 0;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  top: 250px;
+  background-color: #00aced;
+}
+.social-media-twitter:hover {
+  width: 350px;
+  transition: width 2s;
+}
+.social-media-twitter:before {
+  float: left;
+  content: "";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 600;
+}
+
+.social-media-github {
+  position: fixed;
+  right: 0;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  top: 350px;
+  background-color: #333;
+}
+.social-media-github:hover {
+  width: 350px;
+  transition: width 2s;
+}
+.social-media-github:before {
+  float: left;
+  content: "";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 600;
+}
+
+.social-media-linkedin {
+  position: absolute;
+  position: fixed;
+  right: 0;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  top: 450px;
+  background-color: #007bb6;
+}
+.social-media-linkedin:hover {
+  float: left;
+  width: 350px;
+  transition: width 2s;
+}
+.social-media-linkedin:before {
+  float: left;
+  content: "";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 600;
+}/*# sourceMappingURL=styles.css.map */
