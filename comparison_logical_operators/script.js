@@ -34,9 +34,9 @@ if (firstName === "Juno" || firstName === "Abraham") {
   document.write("jij krijgt geen gratis drankje!");
 }
 
-if (totalAmount >= 25 && totalAmount < 50) {
+if (totalAmount > 25) {
   document.write("U krijgt gratis (vega)bitterballen!");
-} else if (totalAmount >= 50 && totalAmount < 100) {
+} else if (totalAmount > 50) {
   document.write("U krijgt gratis nacho's!");
 } else if (totalAmount >= 100) {
   document.write("U krijgt een gratis fles champagne!");
