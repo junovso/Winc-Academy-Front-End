@@ -9,21 +9,8 @@ $boxshadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
   rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
   rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-@import "_card", "_sidebar";
+@import "_card", "_sidebar", "_mixins";
 
-@mixin sidebar-blokjes {
-  position: fixed;
-  right: 0;
-  height: 100px;
-  width: 100px;
-  overflow: hidden;
-  transition: width 0.5s;
-}
-
-@mixin transition {
-  width: 350px;
-  transition: width 0.5s;
-}
 body {
   background: $background;
 }
@@ -74,85 +61,3 @@ p {
 
 /*Ik gebruik FAS 6, maar om een of andere reden kan ik de icons niet weergeven zonder de font-family op deze manier neer te zetten. ( dit is een
 bekend probleem ) */
-
-.social-wrapper {
-  position: fixed;
-  right: 0;
-  top: 20%;
-  font-size: 5rem;
-  text-align: center;
-  color: white;
-}
-.social-media-blog {
-  @include sidebar-blokjes();
-  top: 50px;
-  background-color: #e17b77;
-  &:hover {
-    @include transition();
-  }
-  &:before {
-    float: left;
-
-    content: "\f781";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 600;
-  }
-}
-.social-media-facebook {
-  @include sidebar-blokjes();
-  top: 150px;
-  background-color: #3b5998;
-  &:hover {
-    @include transition();
-  }
-  &:before {
-    float: left;
-    content: "\f39e";
-    font-family: "Font Awesome 5 Brands";
-    font-weight: 600;
-  }
-}
-.social-media-twitter {
-  @include sidebar-blokjes();
-  top: 250px;
-  background-color: #00aced;
-  &:hover {
-    @include transition();
-  }
-  &:before {
-    float: left;
-
-    content: "\f099";
-    font-family: "Font Awesome 5 Brands";
-    font-weight: 600;
-  }
-}
-.social-media-github {
-  @include sidebar-blokjes();
-  top: 350px;
-  background-color: #333;
-  &:hover {
-    @include transition();
-  }
-  &:before {
-    float: left;
-    content: "\f09b";
-    font-family: "Font Awesome 5 Brands";
-    font-weight: 600;
-  }
-}
-.social-media-linkedin {
-  position: absolute;
-  @include sidebar-blokjes();
-  top: 450px;
-  background-color: #007bb6;
-  &:hover {
-    @include transition();
-  }
-  &:before {
-    float: left;
-    content: "\f0e1";
-    font-family: "Font Awesome 5 Brands";
-    font-weight: 600;
-  }
-}

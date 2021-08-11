@@ -1,0 +1,13 @@
+@mixin sidebar-blokjes {
+  position: fixed;
+  right: 0;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  transition: width 0.5s;
+}
+
+@mixin transition {
+  width: 350px;
+  transition: width 0.5s;
+}
