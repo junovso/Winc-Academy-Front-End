@@ -1,31 +1,6 @@
 @charset "UTF-8";
-body {
-  background: #c3cfe2;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 24px;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-.text-muted {
-  color: #afafaf;
-}
-
-.naam {
-  color: #fff;
-}
-
 .card {
-  width: 350px;
+  width: 300px;
   margin: 0 auto;
   margin-top: 20px;
   text-align: center;
@@ -36,7 +11,7 @@ p {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .card .card-body {
-  padding: 10px;
+  padding-top: 30px;
   padding-bottom: 100px;
   height: auto;
   background-color: #fff;
@@ -45,7 +20,7 @@ p {
 .card .card-footer {
   display: flex;
   justify-content: center;
-  height: auto;
+  height: 150px;
   background-color: #686de0;
   border-radius: 0px 0px 10px 10px;
   padding-bottom: 10px;
@@ -107,19 +82,48 @@ p {
   opacity: 1;
 }
 
-@media only screen and (max-width: 481px) {
+body {
+  background: #c3cfe2;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.text-muted {
+  color: #afafaf;
+}
+
+.naam {
+  color: #fff;
+}
+
+@media only screen and (min-width: 660px) {
   .opdracht-2 {
-    display: flex;
-    flex-wrap: wrap;
-    grid-template: auto auto auto/repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     margin-top: 50px;
   }
 }
 @media only screen and (min-width: 998px) {
   .opdracht-2 {
-    display: flex;
-    flex-wrap: wrap;
-    grid-template: auto auto auto/repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     margin-top: 50px;
   }
 }
@@ -140,12 +144,13 @@ bekend probleem ) */
   height: 100px;
   width: 100px;
   overflow: hidden;
+  transition: width 0.5s;
   top: 50px;
   background-color: #e17b77;
 }
 .social-media-blog:hover {
   width: 350px;
-  transition: width 2s;
+  transition: width 0.5s;
 }
 .social-media-blog:before {
   float: left;
@@ -160,12 +165,13 @@ bekend probleem ) */
   height: 100px;
   width: 100px;
   overflow: hidden;
+  transition: width 0.5s;
   top: 150px;
   background-color: #3b5998;
 }
 .social-media-facebook:hover {
   width: 350px;
-  transition: width 2s;
+  transition: width 0.5s;
 }
 .social-media-facebook:before {
   float: left;
@@ -180,12 +186,13 @@ bekend probleem ) */
   height: 100px;
   width: 100px;
   overflow: hidden;
+  transition: width 0.5s;
   top: 250px;
   background-color: #00aced;
 }
 .social-media-twitter:hover {
   width: 350px;
-  transition: width 2s;
+  transition: width 0.5s;
 }
 .social-media-twitter:before {
   float: left;
@@ -200,12 +207,13 @@ bekend probleem ) */
   height: 100px;
   width: 100px;
   overflow: hidden;
+  transition: width 0.5s;
   top: 350px;
   background-color: #333;
 }
 .social-media-github:hover {
   width: 350px;
-  transition: width 2s;
+  transition: width 0.5s;
 }
 .social-media-github:before {
   float: left;
@@ -221,13 +229,13 @@ bekend probleem ) */
   height: 100px;
   width: 100px;
   overflow: hidden;
+  transition: width 0.5s;
   top: 450px;
   background-color: #007bb6;
 }
 .social-media-linkedin:hover {
-  float: left;
   width: 350px;
-  transition: width 2s;
+  transition: width 0.5s;
 }
 .social-media-linkedin:before {
   float: left;
