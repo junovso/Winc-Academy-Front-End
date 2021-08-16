@@ -23,17 +23,21 @@ const ligeel = document.querySelector("#geel");
 const body = document.getElementsByTagName("body")[0];
 
 lirood.addEventListener("click", function () {
+  body.className = "";
   body.classList.toggle("bg-rood");
 });
 
 liblauw.addEventListener("click", function () {
+  body.className = "";
   body.classList.toggle("bg-blauw");
 });
 
 ligroen.addEventListener("click", function () {
+  body.className = "";
   body.classList.toggle("bg-groen");
 });
 
 ligeel.addEventListener("click", function () {
+  body.className = "";
   body.classList.toggle("bg-geel");
 });
