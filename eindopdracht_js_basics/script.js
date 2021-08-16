@@ -1,6 +1,7 @@
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
+// deze code is van w3schools
 for (i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", function () {
     this.classList.toggle("active");
@@ -9,6 +10,7 @@ for (i = 0; i < dropdown.length; i++) {
       dropdownContent.style.display = "none";
     } else {
       dropdownContent.style.display = "block";
+      // de 2 regels hier onder heb ik zelf toegevoegd om het menu te laten sluiten on click.
       dropdownContent.addEventListener("click", function () {
         dropdownContent.style.display = "none";
       });
@@ -16,10 +18,10 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 
-const lirood = document.querySelector("#rood");
-const liblauw = document.querySelector("#blauw");
-const ligroen = document.querySelector("#groen");
-const ligeel = document.querySelector("#geel");
+const liRood = document.querySelector("#rood");
+const liBlauw = document.querySelector("#blauw");
+const liGroen = document.querySelector("#groen");
+const liGeel = document.querySelector("#geel");
 const body = document.getElementsByTagName("body")[0];
 
 lirood.addEventListener("click", function () {
