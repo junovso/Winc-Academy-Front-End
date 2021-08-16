@@ -24,22 +24,22 @@ const liGroen = document.querySelector("#groen");
 const liGeel = document.querySelector("#geel");
 const body = document.getElementsByTagName("body")[0];
 
-lirood.addEventListener("click", function () {
+liRood.addEventListener("click", function () {
   body.className = "";
   body.classList.toggle("bg-rood");
 });
 
-liblauw.addEventListener("click", function () {
+liBlauw.addEventListener("click", function () {
   body.className = "";
   body.classList.toggle("bg-blauw");
 });
 
-ligroen.addEventListener("click", function () {
+liGroen.addEventListener("click", function () {
   body.className = "";
   body.classList.toggle("bg-groen");
 });
 
-ligeel.addEventListener("click", function () {
+liGeel.addEventListener("click", function () {
   body.className = "";
   body.classList.toggle("bg-geel");
 });
