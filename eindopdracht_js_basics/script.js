@@ -1,14 +1,39 @@
-const button = document.querySelector("#mybutton");
-const button2 = document.querySelector("#change-background");
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+      dropdownContent.addEventListener("click", function () {
+        dropdownContent.style.display = "none";
+      });
+    }
+  });
+}
+
+const lirood = document.querySelector("#rood");
+const liblauw = document.querySelector("#blauw");
+const ligroen = document.querySelector("#groen");
+const ligeel = document.querySelector("#geel");
 const body = document.getElementsByTagName("body")[0];
 
-console.log(body);
-button.addEventListener("click", function () {
-  alert("hi!");
+lirood.addEventListener("click", function () {
+  body.classList.toggle("bg-rood");
 });
 
-const toggleColor = function () {
-  body.classList.toggle("red-background");
-};
+liblauw.addEventListener("click", function () {
+  body.classList.toggle("bg-blauw");
+});
 
-button2.addEventListener("click", toggleColor);
+ligroen.addEventListener("click", function () {
+  body.classList.toggle("bg-groen");
+});
+
+ligeel.addEventListener("click", function () {
+  body.classList.toggle("bg-geel");
+});
