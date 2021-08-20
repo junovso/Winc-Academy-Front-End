@@ -1,3 +1,4 @@
+//opdracht A
 const superheroes = [
   { name: "Batman", alter_ego: "Bruce Wayne" },
   { name: "Superman", alter_ego: "Clark Kent" },
@@ -9,12 +10,12 @@ const findSpiderMan = (array) =>
 
 console.log(findSpiderMan(superheroes));
 
-// Opdracht 2
+// Opdracht B
 const doubleArrayValues = (array) => array.map((array) => array * 2);
 
 console.log(doubleArrayValues([1, 2, 3]));
 
-// Opdracht 3
+// Opdracht C
 
 const containsNumberBiggerThan10 = (array) => {
   return array.some((el) => el > 10);
@@ -25,7 +26,7 @@ console.log(containsNumberBiggerThan10([1, 4, 3, 6, 9, 7, 11]));
 console.log(containsNumberBiggerThan10([1, 2, 1, 2, 1, 2]));
 // result should be false
 
-// Opdracht 4
+// Opdracht D
 
 const isItalyInTheGreat7 = (array) => array.includes("Italy");
 
@@ -42,14 +43,14 @@ console.log(
 );
 // result should be true
 
-//Opdracht 5
+//Opdracht E
 
 const tenfold = (array) => array.map((el) => el * 10);
 
 console.log(tenfold([1, 4, 3, 6, 9, 7, 11]));
 // result should be [10, 40, 30, 60, 90, 70, 110]
 
-//Opdracht 6
+//Opdracht F
 
 const isBelow100 = (array) => !array.some((el) => el > 100);
 
@@ -58,7 +59,7 @@ console.log(
 );
 // result should be: false
 
-//Opdracht 7
+//Opdracht G
 
 const bigSum = (array) => {
   return array.reduce(
