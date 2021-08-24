@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- hier zet je de code in de head tags -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script defer src="movies.js"></script>
+    <script defer src="script.js"></script>
+
+    <title>Titel</title>
+  </head>
+  <body>
+    <header>
+      <nav id="filters">
+        <input
+          class="movie-radio"
+          type="radio"
+          id="latest-films"
+          name="movie"
+          value="latest-films"
+        />
+        <label for="2014">Laatste Films, 2014 of nieuwer</label><br />
+        <input
+          class="movie-radio"
+          type="radio"
+          id="avenger-films"
+          name="movie"
+          value="avenger-films"
+        />
+        <label for="avenger">Avenger Films</label><br />
+        <input
+          class="movie-radio"
+          type="radio"
+          id="x-men-films"
+          name="movie"
+          value="x-men-films"
+        />
+        <label for="avenger">X-Men Films</label><br />
+        <input
+          class="movie-radio"
+          type="radio"
+          id="princess-films"
+          name="movie"
+          value="princess-films"
+        />
+        <label for="princess">Princess Films</label><br />
+        <input
+          class="movie-radio"
+          type="radio"
+          id="batman-films"
+          name="movie"
+          value="batman-films"
+        />
+        <label for="batman">Batman Films</label><br />
+      </nav>
+    </header>
+
+    <hr />
+    <main class="index-main">
+      <ul id="movie-list"></ul>
+    </main>
+    <footer>Copyright 2021</footer>
+  </body>
+</html>
