@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(43, 43, 43);
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.item-box {
+  background-color: gray;
+  height: 200px;
+  width: 250px;
+}
+
+#item-image {
+  background-color: lightcoral;
+  height: 100px;
+  width: 250px;
+}
+
+#item-image > img {
+  width: 100px;
+  height: 100px;
+}
