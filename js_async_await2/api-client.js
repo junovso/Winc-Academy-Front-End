@@ -12,16 +12,6 @@ const API_KEY = "e91101a131169ae2c0bd0de393df9ee4";
 //   }
 // }
 
-// async function getTopRatedFilms() {
-//   const apiUrl =
-//     "https://api.themoviedb.org/3/movie/top_rated/?api_key=" + API_KEY;
-//   try {
-//     const res = await fetch(apiUrl);
-//     return await res.json();
-//   } catch (err) {
-//     console.log(err);
-//   }
-// }
 
 async function getMovieGenres() {
   const apiUrl = `https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}`;
@@ -48,6 +38,15 @@ async function getMyTopMovie() {
   }
 }
 
-async function getTopRatedMovies() {}
+ async function getTopRatedFilms() {
+   const apiUrl =
+     "https://api.themoviedb.org/3/movie/top_rated/?api_key=" + API_KEY;
+   try {
+     const res = await fetch(apiUrl);
+     return await res.json();
+   } catch (err) {
+     console.log(err);
+   }
+ }
 
 async function getTopRatedActionMovies() {}

@@ -113,7 +113,7 @@ const lightSuperheroes = (hero) => {
 // console.log(lightSuperheroes());
 
 const normalSuperheroes = (hero) => {
-  return superheroes.filter((hero) => (hero.weight = 200));
+  return superheroes.filter((hero) => hero.weight == 200);
 };
 
 // console.log(normalSuperheroes());
