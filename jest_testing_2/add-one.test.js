@@ -1,4 +1,4 @@
-const addOne = require("./script.js");
+const addOne = require("./add-one.js");
 
 test("Add 1 to each item in myArray", function () {
   const myArray = [31, 57, 12, 5];
