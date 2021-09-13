@@ -3,4 +3,4 @@ const addOne = function (numbers) {
     number++;
   });
 };
-module.exports = addOne;
+module.exportss = addOne;
