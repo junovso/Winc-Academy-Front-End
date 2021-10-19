@@ -1,11 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import List from "./List";
 function GroceryList(props) {
   return (
-    <List
-      key={props.groceryListItems.id}
-      value={props.groceryListItems.title}
-    />
+    <div>
+      <List value={props.value} />
+    </div>
   );
 }
 export default GroceryList;

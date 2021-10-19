@@ -1,16 +1,12 @@
 import React, { Component } from "react";
-import ListItem from "./ListItem";
 
-class List extends React.Component {
-  constructor() {
+class List extends Component {
+  constructor(props) {
     super();
-    this.state = {};
+    this.state = props;
   }
   render() {
-    const items = this.state.groceryItems.map((item) => (
-      <ListItem key={item.id} item={item} />
-    ));
-    return <ul>{items}</ul>;
+    return <ul>{this.props.value}</ul>;
   }
 }
 

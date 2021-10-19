@@ -19,19 +19,32 @@ class Container extends Component {
         { id: 4, title: "Spinazie" },
       ],
     };
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    console.log("Clicked!");
   }
   render() {
-    console.log(this.state.shoppingListItems.title);
+    const mappedGroceryListItems = this.state.groceryListItems.map((item) => (
+      <GroceryList
+        key={item.id}
+        value={item.title}
+        handleClick={this.handleClick}
+      />
+    ));
+    const mappedShoppingListItems = this.state.shoppingListItems.map((item) => (
+      <ShoppingCart
+        key={item.id}
+        value={item.title}
+        handleClick={this.handleClick}
+      />
+    ));
     return (
       <div>
-        <ShoppingCart
-          key={this.state.shoppingListItems.id}
-          value={this.state.shoppingListItems.title}
-        />
-        <GroceryList
-          key={this.state.groceryListItems.id}
-          value={this.state.groceryListItems.title}
-        />
+        <p> Grocery Items: </p>
+        {mappedGroceryListItems}
+        <p>Shopping List Items:</p>
+        {mappedShoppingListItems}
       </div>
     );
   }

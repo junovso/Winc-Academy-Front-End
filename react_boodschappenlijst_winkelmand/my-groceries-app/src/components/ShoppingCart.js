@@ -1,11 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import List from "./List";
 function ShoppingCart(props) {
-  return (
-    <List
-      key={props.shoppingListItems.id}
-      value={props.shoppingListItems.title}
-    />
-  );
+  return <List key={props.id} value={props.value} />;
 }
 export default ShoppingCart;
