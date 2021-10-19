@@ -29,14 +29,14 @@ class Container extends Component {
       <GroceryList
         key={item.id}
         value={item.title}
-        handleClick={this.handleClick}
+        onClick={this.handleClick}
       />
     ));
     const mappedShoppingListItems = this.state.shoppingListItems.map((item) => (
       <ShoppingCart
         key={item.id}
         value={item.title}
-        handleClick={this.handleClick}
+        onClick={this.handleClick}
       />
     ));
     return (
