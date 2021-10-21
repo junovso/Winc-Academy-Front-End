@@ -1,9 +1,9 @@
 import React from "react";
 import List from "./List";
 function GroceryList(props) {
-  return (
+    return (
     <div>
-      <List value={props.value} handleClick={props.handleClick} />
+      <List key={props.id} value={props} handleClick={props.handleClick} />
     </div>
   );
 }

@@ -1,12 +1,15 @@
 import React, { Component } from "react";
-
+import ListItem from "./ListItem"
 class List extends Component {
   constructor(props) {
     super();
     this.state = props;
   }
   render() {
-    return <ul onClick={this.props.handleClick}>{this.props.value}</ul>;
+    console.log(this.props.value.value[0])
+    return <ul>
+      <ListItem value={this.props} handleClick={this.props.handleClick}/>
+      </ul>;
   }
 }
 
