@@ -6,7 +6,7 @@ class List extends Component {
     this.state = props;
   }
   render() {
-    return <ul>{this.props.value}</ul>;
+    return <ul onClick={this.props.handleClick}>{this.props.value}</ul>;
   }
 }
 

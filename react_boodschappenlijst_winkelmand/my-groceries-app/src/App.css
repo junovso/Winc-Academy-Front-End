@@ -42,3 +42,38 @@ ul {
   margin: 0;
   border: 1px solid black;
 }
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: grey;
+}
+
+.grocery-list {
+  width: 300px;
+  margin: 20px;
+}
+
+.shopping-list {
+  width: 300px;
+  margin: 20px;
+}
+
+.grocery-text {
+  border: 3px solid black;
+}
+
+.shopping-text {
+  border: 3px solid black;
+}
+
+.header-box {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background-color: rgb(44, 58, 44);
+  border: 5px solid black;
+}
