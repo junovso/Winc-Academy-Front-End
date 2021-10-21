@@ -3,10 +3,11 @@ import ListItem from "./ListItem"
 class List extends Component {
   constructor(props) {
     super();
-    this.state = props;
+    this.state = {};
   }
   render() {
-    console.log(this.props.value.value[0])
+    console.log(this.props)
+    //console.log(this.props.value.value[0])
     return <ul>
       <ListItem value={this.props} handleClick={this.props.handleClick}/>
       </ul>;
@@ -14,3 +15,4 @@ class List extends Component {
 }
 
 export default List;
+

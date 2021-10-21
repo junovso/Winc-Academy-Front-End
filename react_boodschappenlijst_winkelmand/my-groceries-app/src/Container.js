@@ -66,7 +66,7 @@ class Container extends Component {
         <div class="shopping-list">
           <p class="shopping-text"> Shopping List Items:</p>
           <ShoppingCart
-          key = {this.state.shoppingListItems.id}
+          key={this.state.shoppingListItems.id}
          value={this.state.shoppingListItems}
          handleClick={this.handleClick}
        />
