@@ -11,15 +11,15 @@ class List extends Component {
       <div>
     <ul>
         {
-          this.props.groceryList.value.map((grocery) => {
-            return <ListItem value={this.props.groceryList.title} handleClick={this.props.handleClick}/> 
+          this.props.groceryItemList.map((grocery) => {
+            return <ListItem value={grocery.title} handleClick={this.props.handleClick}/> 
           })
         }
     </ul>
     <ul>
         {
-          this.props.shoppingList.value.map((shopListItem) => {
-            return <ListItem value={this.props.shoppingList.title} handleClick={this.props.handleClick}/> 
+          this.props.shopItemList.map((shopItem) => {
+            return <ListItem value={shopItem.title} handleClick={this.props.handleClick}/> 
           })
         }
     </ul>
