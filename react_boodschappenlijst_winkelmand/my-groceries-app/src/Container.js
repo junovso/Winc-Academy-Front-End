@@ -59,7 +59,7 @@ class Container extends Component {
           <p class="grocery-text"> Grocery Items: </p>
           <GroceryList
           key={this.state.groceryListItems.id}
-          value={this.state.groceryListItems}
+          itemList={this.state.groceryListItems}
           handleClick={this.handleClick}
           />
         </div>
@@ -67,7 +67,7 @@ class Container extends Component {
           <p class="shopping-text"> Shopping List Items:</p>
           <ShoppingCart
           key={this.state.shoppingListItems.id}
-         value={this.state.shoppingListItems}
+         itemList={this.state.shoppingListItems}
          handleClick={this.handleClick}
        />
         </div>

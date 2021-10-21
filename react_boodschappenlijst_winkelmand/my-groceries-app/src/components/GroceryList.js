@@ -3,7 +3,7 @@ import List from "./List";
 function GroceryList(props) {
     return (
     <div>
-      <List key={props.value.id} groceryList={props.value} handleClick={props.handleClick} />
+      <List key={props.itemList.id} groceryItemList={props.itemList} handleClick={props.handleClick} />
     </div>
   );
 }
