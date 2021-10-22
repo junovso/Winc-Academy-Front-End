@@ -1,11 +1,10 @@
 import React from "react";
 
 function ListItem(props) {
-console.log(props)
-
+  const { item, handleClick} = props;
   return (
-    <li onClick={props.handleClick} key={props.id} value={props.title}>
-      {props.title}
+    <li onClick={handleClick} id={item.id} value={item.value}>
+      {item.title}
     </li>
   );
 }

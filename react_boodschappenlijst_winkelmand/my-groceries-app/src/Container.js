@@ -21,10 +21,18 @@ class Container extends Component {
     };
     this.handleClick = this.handleClick.bind(this);
   }
-  handleClick(props) {
-    console.log("clicked", props);
-    const clickedItem = props.target.innerHTML;
-    console.log(clickedItem);
+  //changed prop to event and assigned value
+  handleClick(event) {
+    const target = event.target
+    console.log(event)
+    console.log("target", target)
+    const arrLength = this.state.shoppingListItems.length + 1
+    console.log(arrLength)
+      this.setState( prevState => ({
+        shoppingListItems: [{id: arrLength, title: target.innerHTML}, ...prevState.shoppingListItems]
+     }));
+     console.log(this.state.shoppingListItems)
+    
   }
   render(props) {
     // const mappedGroceryListItems = this.state.groceryListItems.map((item) => (
@@ -76,3 +84,4 @@ class Container extends Component {
   }
 }
 export default Container;
+

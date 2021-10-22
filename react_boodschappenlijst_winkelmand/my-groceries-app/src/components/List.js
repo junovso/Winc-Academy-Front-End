@@ -6,23 +6,22 @@ class List extends Component {
     this.state = {};
   }
   render() {
-    console.log(this.props)
+    const { itemList, handleClick} = this.props;
     return (
       <div>
     <ul>
+        Map over itemList & return Array vol met ListItem componenten. 
         {
-          this.props.groceryItemList.map((grocery) => {
-            return <ListItem value={grocery.title} handleClick={this.props.handleClick}/> 
-          })
+          itemList.map(item => <ListItem key={item.id} item={item} handleClick={handleClick}/>)
         }
     </ul>
-    <ul>
+    {/* <ul>
         {
           this.props.shopItemList.map((shopItem) => {
             return <ListItem value={shopItem.title} handleClick={this.props.handleClick}/> 
           })
         }
-    </ul>
+    </ul> */}
     </div> 
     )
   }

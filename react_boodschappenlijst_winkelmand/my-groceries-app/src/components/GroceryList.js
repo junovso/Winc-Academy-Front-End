@@ -1,10 +1,10 @@
 import React from "react";
 import List from "./List";
 function GroceryList(props) {
-    return (
-    <div>
-      <List key={props.itemList.id} groceryItemList={props.itemList} handleClick={props.handleClick} />
-    </div>
-  );
+    return <List key={props.itemList.id} itemList={props.itemList} handleClick={props.handleClick} /> 
+    //changed prop name to itemList
+
+    
+  ;
 }
 export default GroceryList;

@@ -3,7 +3,8 @@ import List from "./List";
 function ShoppingCart(props) {
   
   return (
-    <List key={props.itemList.id} shopItemList={props.itemList} handleClick={props.handleClick} />
+    //changed prop name to itemList
+    <List key={props.itemList.id} itemList={props.itemList}  />
   );
 }
 export default ShoppingCart;
