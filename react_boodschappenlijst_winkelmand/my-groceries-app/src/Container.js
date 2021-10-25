@@ -33,12 +33,12 @@ class Container extends Component {
 
     this.state.shoppingListItems.filter((item) => {
       if (item.title === target.title) {
-        // this.setState((prevState) => ({
-        //   shoppingListItems: [
-        //     { ...item, amount: prevState.amount + 1 },
-        //     ...prevState.shoppingListItems,
-        //   ],
-        // }));
+        this.setState((prevState) => ({
+          shoppingListItems: [
+            { ...item, amount: prevState.amount + 1 },
+            ...prevState.shoppingListItems,
+          ],
+        }));
       } else {
         this.setState((prevState) => ({
           shoppingListItems: [
