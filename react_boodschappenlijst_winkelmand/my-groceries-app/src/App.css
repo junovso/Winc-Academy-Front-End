@@ -44,20 +44,22 @@ ul {
 }
 
 .box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   background-color: grey;
 }
 
+.grocery-input-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 .grocery-list {
-  width: 300px;
-  margin: 20px;
+  max-height: 150px;
+  overflow-y: scroll;
 }
 
 .shopping-list {
-  width: 300px;
-  margin: 20px;
+  max-height: 150px;
+  overflow-y: scroll;
 }
 
 .grocery-text {
@@ -76,4 +78,8 @@ ul {
   width: 100%;
   background-color: rgb(44, 58, 44);
   border: 5px solid black;
+}
+
+.list-item:nth-child(odd) {
+  background-color: darkslategray;
 }
