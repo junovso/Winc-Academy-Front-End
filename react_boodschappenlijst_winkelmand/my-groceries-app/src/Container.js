@@ -13,6 +13,7 @@ class Container extends Component {
         { id: 2, title: "Aardappelen", amount: 1 },
         { id: 3, title: "Spinazie", amount: 1 },
         { id: 4, title: "Bonen", amount: 1 },
+        { id: 5, title: "Braadworst", amount: 1 },
       ],
       shoppingListItems: [
         { id: 1, title: "Bonen", amount: 1 },
@@ -24,6 +25,16 @@ class Container extends Component {
     this.handleClick = this.handleClick.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
     this.handleInput = this.handleInput.bind(this);
+    this.addAmountToItem = this.addAmountToItem.bind(this);
+  }
+  addAmountToItem(item) {
+    console.log("this item is already in the list");
+    this.setState((prevState) => ({
+      shoppingListItems: [
+        { ...item, amount: prevState.amount + 1 },
+        ...prevState.shoppingListItems,
+      ],
+    }));
   }
   //changed prop to event and assigned value
   handleClick(event) {
@@ -31,14 +42,9 @@ class Container extends Component {
     console.log(target);
     const arrLength = this.state.shoppingListItems.length + 1;
 
-    this.state.shoppingListItems.filter((item) => {
+    this.state.shoppingListItems.find((item) => {
       if (item.title === target.title) {
-        this.setState((prevState) => ({
-          shoppingListItems: [
-            { ...item, amount: prevState.amount + 1 },
-            ...prevState.shoppingListItems,
-          ],
-        }));
+        this.addAmountToItem(item);
       } else {
         this.setState((prevState) => ({
           shoppingListItems: [
