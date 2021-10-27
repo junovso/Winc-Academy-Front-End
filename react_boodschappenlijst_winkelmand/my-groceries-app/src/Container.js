@@ -27,8 +27,18 @@ class Container extends Component {
     this.handleInput = this.handleInput.bind(this);
     this.addAmountToItem = this.addAmountToItem.bind(this);
   }
-  addAmountToItem(item) {
+  addAmountToItem(item, target) {
     console.log("this item is already in the list");
+    const nieuweShoppingList = this.state.shoppingListItems.map((item) => {
+      const shopList = this.state.shoppingListItems
+      const newAmount = item.amount + 1;
+      if (item.title === target.title) {
+        const nieuwObject =  [...shopList{ ...item, amount: newAmount },
+        
+        return nieuwObject;
+      }
+    });
+    console.log(nieuweShoppingList);
     this.setState((prevState) => ({
       shoppingListItems: [
         { ...item, amount: prevState.amount + 1 },
@@ -36,6 +46,7 @@ class Container extends Component {
       ],
     }));
   }
+
   //changed prop to event and assigned value
   handleClick(event) {
     const target = event.target;
@@ -44,16 +55,16 @@ class Container extends Component {
 
     this.state.shoppingListItems.find((item) => {
       if (item.title === target.title) {
-        this.addAmountToItem(item);
-      } else {
-        this.setState((prevState) => ({
-          shoppingListItems: [
-            { id: arrLength, title: target.title, amount: 1 },
-            ...prevState.shoppingListItems,
-          ],
-        }));
+        this.addAmountToItem(item, target);
+        // } else {
+        //   this.setState((prevState) => ({
+        //     shoppingListItems: [
+        //       { id: arrLength, title: target.title, amount: 1 },
+        //       ...prevState.shoppingListItems,
+        //     ],
+        //   }));
       }
-      console.log(this.state.shoppingListItems);
+      // console.log(this.state.shoppingListItems);
     });
   }
 
