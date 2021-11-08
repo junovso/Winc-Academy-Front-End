@@ -34,7 +34,7 @@ class Container extends Component {
     const list = this.state.playlist;
     list.splice(
       list.findIndex(function (i) {
-        return i.id === e.target.id;
+        return i.id == e.target.id;
       }),
       1
     );

@@ -43,10 +43,8 @@ body {
 }
 
 .playlist {
-  box-sizing: border-box;
   margin: 0;
   height: 700px;
-  border: 5px solid rgb(161, 35, 35);
   overflow-y: scroll;
 }
 
@@ -81,6 +79,4 @@ li {
   line-height: 50px;
   display: flex;
   justify-content: space-between;
-  border: 5px solid rgb(161, 35, 35);
-  border-bottom: none;
 }
