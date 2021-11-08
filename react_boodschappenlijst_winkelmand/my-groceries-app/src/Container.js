@@ -26,51 +26,44 @@ class Container extends Component {
     this.handleDelete = this.handleDelete.bind(this);
     this.handleInput = this.handleInput.bind(this);
     this.addAmountToItem = this.addAmountToItem.bind(this);
+    this.addItem = this.addItem.bind(this)
   }
-  addAmountToItem(item, target) {
-    console.log("this item is already in the list");
-    const nieuweShoppingList = this.state.shoppingListItems.map((item) => {
-      const shopList = this.state.shoppingListItems
-      const newAmount = item.amount + 1;
-      if (item.title === target.title) {
-        const nieuwObject =  [...shopList{ ...item, amount: newAmount },
-        
-        return nieuwObject;
-      }
-    });
-    console.log(nieuweShoppingList);
+  addAmountToItem(target) {
+    console.log("this item is already in the list", target);
     this.setState((prevState) => ({
-      shoppingListItems: [
-        { ...item, amount: prevState.amount + 1 },
-        ...prevState.shoppingListItems,
-      ],
-    }));
+      shoppingListItems: prevState.shoppingListItems.map(item => {
+        console.log(item)
+      return item.title === target.title ? {...item, amount: item.amount + 1} : item
+    })
+ }))
   }
 
+  addItem(target) {
+    console.log("you tried to add an item which is not in shoppinglist already")
+    const arrLength = this.state.shoppingListItems.length + 1;
+    this.setState((prevState)=> ({
+      shoppingListItems: [
+        {id: arrLength, title: target.title, amount: 1},
+        ...prevState.shoppingListItems
+      ]
+    }))
+  
+  }
   //changed prop to event and assigned value
   handleClick(event) {
     const target = event.target;
     console.log(target);
-    const arrLength = this.state.shoppingListItems.length + 1;
-
-    this.state.shoppingListItems.find((item) => {
-      if (item.title === target.title) {
-        this.addAmountToItem(item, target);
-        // } else {
-        //   this.setState((prevState) => ({
-        //     shoppingListItems: [
-        //       { id: arrLength, title: target.title, amount: 1 },
-        //       ...prevState.shoppingListItems,
-        //     ],
-        //   }));
-      }
-      // console.log(this.state.shoppingListItems);
-    });
-  }
+    if (this.state.shoppingListItems.some(e => e.title === target.title)) {
+     this.addAmountToItem(target)
+    } else {
+      this.addItem(target)
+    }
+}
 
   handleDelete() {
+    const emptyArray = [];
     this.setState({
-      shoppingListItems: [],
+      shoppingListItems: emptyArray,
     });
   }
 
@@ -88,32 +81,7 @@ class Container extends Component {
   }
 
   render(props) {
-    // const mappedGroceryListItems = this.state.groceryListItems.map((item) => (
-    //   <GroceryList
-    //     key={item.id}
-    //     value={item.title}
-    //     handleClick={this.handleClick}
-    //   />
-    // ));
-    // const mappedShoppingListItems = this.state.shoppingListItems.map((item) => (
-    //   <ShoppingCart
-    //     key={item.id}
-    //     value={item.title}
-    //     handleClick={this.handleClick}
-    //   />
-    // ));
-
-    // let count = this.state.groceryListItems.length
-    // for (let i = 0; i < count; i++) {
-    //   let groceryId = this.state.groceryListItems[i].id
-    //   let groceryTitle = this.state.groceryListItems[i].title
-    //   let shoppingCartId = this.state.shoppingListItems[i].id
-    //   let shoppingCartTitle = this.state.shoppingListItems[i].title
-
-    //   console.log(groceryId + groceryTitle + shoppingCartId + shoppingCartTitle)
-
-    // }
-
+  
     return (
       <div class="box">
         <div>
