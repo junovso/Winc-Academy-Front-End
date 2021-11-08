@@ -4,13 +4,15 @@ import ListItem from "./ListItem";
 const List = (props) => {
   return (
     <div>
-      <div className="playlist-bar">
-        <span>ID</span>
-        <span>title</span>
-        <span>artist</span>
-        <span>genre</span>
-        <span>rating</span>
-      </div>
+      <nav className="navbar navbar-dark bg-dark">
+        <div className="container-fluid">
+          <span>ID</span>
+          <span>title</span>
+          <span>artist</span>
+          <span>genre</span>
+          <span>rating</span>
+        </div>
+      </nav>
       <div className="card bg-dark">
         <ul className="playlist">
           <ListItem

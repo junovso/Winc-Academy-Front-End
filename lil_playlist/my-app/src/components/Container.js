@@ -44,15 +44,6 @@ class Container extends Component {
     this.setState(() => ({
       playlist: list,
     }));
-    // console.log(this.state.playlist);
-    // console.log(e.target.id);
-    // const itemToDelete = this.state.playlist.map((song) => {
-    //   if (e.target.id === song.id) {
-    //     console.log("found");
-    //   }
-    //   return song;
-    // });
-    // console.log(itemToDelete);
   }
 
   handleClick(e) {
